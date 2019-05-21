@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('font/CaviarDreams.eot');
+    src: url('font/CaviarDreams.eot?#iefix') format('embedded-opentype'),
+        url('font/CaviarDreams.woff2') format('woff2'),
+        url('font/CaviarDreams.woff') format('woff'),
+        url('font/CaviarDreams.ttf') format('truetype'),
+        url('font/CaviarDreams.svg#CaviarDreams') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Tahu!';
+    src: url('font/Tahu.eot');
+    src: url('font/Tahu.eot?#iefix') format('embedded-opentype'),
+        url('font/Tahu.woff2') format('woff2'),
+        url('font/Tahu.woff') format('woff'),
+        url('font/Tahu.ttf') format('truetype'),
+        url('font/Tahu.svg#Tahu!') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul{
+	padding:0;
+}
+
+section p::first-letter,
+article p::first-letter{
+	color: gold;
+	font-size:2em;
+	border:2px dotted gold;
+	background-color : aliceblue;
+	padding : 5px 10px;
+}
+h1{
+	font-family: 'Tahu!';
+}
+p,
+a,
+h2{
+ font-family: 'Caviar Dreams';	
+}
+html{
+	width:900px;
+	margin-top:0px;
+	margin-right:auto;
+	margin-bottom:0px;
+	margin-left:auto;
+}
+p{
+ font-family: 'Caviar Dreams';	
+}
+div#header{
+
+	height:300px;
+	padding-top:10%;
+}
+#marge{
+	margin-top:4%;
+	margin-bottom:4%;
+}
+body header div img{
+	float:left;
+}
+h1,h2,h3{
+	text-align:center;
+}
+header ul li{
+	display:inline-block;
+	list-style-type:none;
+}
+ul{
+	text-align:center;
+	font-size:1.5em;	
+}
+#logo{
+	width:100px;
+	height:100px;
+}
+header{
+
+	background-image:url('images/fond_image1.jpg');
+}
+/*et c'est parti pour le slider*/
+#slider{
+	margin-top:6%;
+}
+section img{
+	width:700px;
+	height:400px;
+}
+section div{
+	text-align:justify;
+}
+section{
+	margin-top:5%;
+}
+.hide{
+	display:none;
+}
+#premier{
+	margin-left:400px;
+}
+section div img{
+	margin-top:-1%;
+}
+
+
+section li{
+	list-style-type:none;
+}
+.inline{
+	float:left;	
+}
+p{	
+	text-align:justify;	
+}
+/*et le footer*/
+footer div{
+	margin-top:200px;
+	display:flex;
+}
+.right{
+	font-weight:bold;
+	margin-left:59%;
+}
+/*et c parti pour la page Histoire*/
+#corps_histoire{
+	display:flex;
+}
+div img.histoire{
+	width: 400px;
+	height: 200px;
+}
+article header h2{
+	margin-top:4%;
+	margin-bottom:4%;
+}
+section#corps_histoire p{
+	width:400px;
+	text-align:justify;
+}
+section#corps_histoire figure:first-child{
+	margin-top:5%;
+	margin-bottom:15%;
+}
+article{
+	margin-top:3%;	
+}
+article section#corps_histoire{
+	margin-top: -2%;
+}
+a:link { color: blue; text-decoration:none; }          /* Liens non visités */
+a:visited { color: purple; }     /* Liens visités */
+/*a:hover { background: yellow; }  /* Liens survolés */
+a:active { color: red; }         /* Liens actifs */
+.responsive{
+	margin-left:300px;
+}
+/*et la page 3 */
+.calendrier1{
+	width: 300px;
+	height: 300x;
+}
+.calendrier2{
+	width: 300px;
+	height: 300x;
+	margin-left:10%;
+}
+
+#calendrier{
+	display:flex;
+}
+#calendrier p{
+	width:200px;
+	margin-left:7%;
+}
+article h2{
+	margin-top:5%;
+	margin-bottom:5%;
+}
+.calendrier1:hover
+	{
+  transform: scale(2.5); /* (250% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.calendrier2:hover
+	{
+  transform: scale(2.5); /* (250% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+@media screen and (max-width: 900px)
+/*1ere page*/
+{
+h1{
+	color:blue;
+}
+html{
+	width:600px;
+	margin-top:0px;
+	margin-right:auto;
+	margin-bottom:0px;
+	margin-left:auto;
+	
+}
+section img{
+	width:400px;
+	height:250px;
+}
+#premier{
+	margin-left:210px;
+}
+.responsive{
+	margin-left:150px;
+}
+/*2e page*/
+#corps_histoire{
+	flex-direction:column;
+	margin-left: 10%;	
+}
+section#corps_histoire p{
+	margin-left:7%;
+}
+/*3e page*/
+#calendrier{
+	flex-direction:column;
+}
+#calendrier p{
+	width:280px;
+	margin-top:50px;
+	margin-right:auto;
+	margin-bottom:50px;
+	margin-left:auto;
+}
+.calendrier1{
+	width: 280px;
+	height: 300x;
+	margin-top:0px;
+	margin-right:auto;
+	margin-bottom:0px;
+	margin-left:auto;
+}
+.calendrier2{
+	width: 280px;
+	height: 300x;
+	margin-top:0px;
+	margin-right:auto;
+	margin-bottom:0px;
+	margin-left:auto;
+}
+.calendrier1:hover
+	{
+  transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.calendrier2:hover
+	{
+  transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+}
+@media screen and (max-width: 650px){
+/*1ere page*/
+	h1{
+	color:red;
+}
+html{
+	width:300px;
+	margin-top:0px;
+	margin-right:auto;
+	margin-bottom:0px;
+	margin-left:auto;
+	
+}
+section img{
+	width:280px;
+	height:200px;
+	margin-left: -35px;
+}
+#premier{
+	margin-left:70px;
+}
+.responsive{
+	margin-left:0px;
+}
+/*2e page*/
+div img.histoire{
+	width: 280px;
+	height: 200px;
+	margin-left:-33%;
+}
+section#corps_histoire p{
+	width:300px;
+	margin-left:-18%;
+}
+footer{
+	width:250px;
+	margin-left:-5%;
+}
+.calendrier1:hover
+	{
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.calendrier2:hover
+	{
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+}
+
+
+
+
+
+
